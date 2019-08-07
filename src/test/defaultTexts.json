@@ -1,0 +1,25 @@
+{
+	"required_textkey1_static": {
+		"text": "required textkey1 static {replacement}"
+	},
+	"required_textkey1_static_longer": {
+		"text": "required textkey1 static longer {replacement}"
+	},
+	"required_textkey2_dynamic_prefix": {
+		"text": "required textkey2 dynamic {postfix}",
+		"dynamic": true
+	},
+	"optional_textkey1_prefix": {
+		"text": "optional textkey1 {postfix}",
+		"optional": true
+	},
+	"optional_textkey1_prefix_longer": {
+		"text": "optional textkey1 longer {postfix}",
+		"optional": true
+	},
+	"optional_textkey2_dynamicdefault_prefix": {
+		"text": "optional textkey2 dynamic default {postfix}",
+		"optional": true,
+		"dynamic": true
+	}
+}

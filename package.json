@@ -1,0 +1,48 @@
+{
+		"name": "@pubcore/ui-text",
+		"version": "1.0.0",
+		"description": "supports developer synchronizing text-keys used in source-code and default text.json file",
+		"author": "pubcore",
+		"repository": {
+				"type": "git",
+				"url": "git+ssh://git@github.com:pubcore/ui-asset.git"
+		},
+		"scripts": {
+			"test": "set NODE_ENV=dev && mocha --require @babel/register src/**/*.spec.js",
+			"test-with-coverage": "set NODE_ENV=dev && nyc --reporter=text mocha --require @babel/register src/**/*.spec.js",
+			"build": "babel src --out-dir js --ignore src/*.spec.js",
+			"pack": "npm run build && webpack --mode=production",
+			"prepublish": "npm run build"
+		},
+		"main": "js/uiText.js",
+		"license": "MIT",
+		"babel": {
+				"presets": [
+						"@babel/preset-env"
+				],
+				"plugins": [
+						"@babel/plugin-proposal-object-rest-spread"
+				]
+		},
+		"devDependencies": {
+				"@babel/cli": "^7.5.5",
+				"@babel/core": "^7.5.5",
+				"@babel/plugin-proposal-object-rest-spread": "^7.5.5",
+				"@babel/preset-env": "^7.5.5",
+				"@babel/register": "^7.5.5",
+				"eslint": "^6.0.1",
+				"eslint-plugin-mocha": "^5.2.0",
+				"mocha": "^5.2.0",
+				"nyc": "^14.1.1",
+				"chai": "^4.2.0",
+				"fakexmlhttprequest": "0.0.1"
+		},
+		"dependencies": {
+				"deep-equal": "^1.0.1",
+				"pubcore-http": "^1.0.8"
+		},
+		"nyc": {
+	    "include": "/src",
+	    "exclude": "/src/**/*.spec.js"
+	  }
+}
