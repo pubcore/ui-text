@@ -1,7 +1,7 @@
 import {expect} from 'chai'
-import defaultTexts from './test/defaultTexts.json'
-import {initDefaultTexts} from './validateTextkey'
-import uiTextV2 from './uiTextV2'
+import defaultTexts from './defaultTexts.json'
+import {initDefaultTexts} from '../src/validateTextkey'
+import uiTextV2 from '../src/uiTextV2'
 
 describe('uiTextV2, ' + new Date(), () => {
 

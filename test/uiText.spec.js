@@ -1,8 +1,8 @@
 import {expect} from 'chai'
 import FakeXMLHTTPRequests from 'fakexmlhttprequest'
-import uiText, {initLogMissingTextkey,initDefaultTexts,initEnvIsDev} from './uiText'
-import {isMissingTextkey} from './logMissingTextkey'
-import defaultTexts from './test/defaultTexts.json'
+import uiText, {initLogMissingTextkey,initDefaultTexts,initEnvIsDev} from '../src/uiText'
+import {isMissingTextkey} from '../src/logMissingTextkey'
+import defaultTexts from './defaultTexts.json'
 
 const T = {
 	foo: 'bar'

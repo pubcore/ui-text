@@ -1,6 +1,6 @@
 import {expect} from 'chai'
-import {uiTextOptional} from './uiText'
-import {isMissingTextkey} from './logMissingTextkey'
+import {uiTextOptional} from '../src/uiText'
+import {isMissingTextkey} from '../src/logMissingTextkey'
 
 describe('uiTextOptional ' + new Date(), () => {
 	it('is available', () => {

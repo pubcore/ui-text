@@ -1,5 +1,5 @@
 import {expect} from 'chai'
-import {initAutoupdateDefaultTexts,isAutoupdateDefaultTextsEnabled} from './autoupdateDefaultTexts'
+import {initAutoupdateDefaultTexts,isAutoupdateDefaultTextsEnabled} from '../src/autoupdateDefaultTexts'
 
 describe('autoupdateDefaultTexts, ' + new Date(), () => {
 
