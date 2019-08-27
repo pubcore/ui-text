@@ -1,6 +1,6 @@
 {
 		"name": "@pubcore/ui-text",
-		"version": "1.0.0",
+		"version": "1.0.1",
 		"description": "supports developer synchronizing text-keys used in source-code and default text.json file",
 		"author": "pubcore",
 		"repository": {
